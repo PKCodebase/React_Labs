@@ -1,0 +1,15 @@
+.myclass1{
+  font-size: 20px;
+  color: red;
+  text-align: center;
+  font-family: Cambria;
+}
+.myclass2{
+  font-size: 25px;
+  color: green;
+  text-align: center;
+  font-family: Cambria;
+}
+.myclass{
+  border: 2px solid black;
+}
