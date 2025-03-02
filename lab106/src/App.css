@@ -1,0 +1,32 @@
+.myheader{ 
+  text-align: center; 
+  font-size: 30px; 
+  font-family: Cambria; 
+  color: red;
+ }
+ .mydata{
+   font-size: 20px;
+   font-family: Cambria;
+   padding: 10px;
+   margin-left: 100px;
+ }
+ ul{
+  list-style: circle;
+ }
+ table{
+  width: 50%;
+  border: 1px solid black;
+  border-collapse: collapse;
+ }
+ tr,td,th{
+  border: 1px solid black;
+  border-collapse: collapse;
+ }
+ th{
+  background-color: rgb(69, 235, 193);
+  color: rgb(207, 42, 21);
+ }
+ .mybutton{
+  background-color: chartreuse;
+  color: black;
+ }

@@ -1,0 +1,49 @@
+.myheader{ 
+    text-align: center; 
+    font-size: 40px; 
+    font-family: Cambria; 
+    color:rgb(0, 0, 0);
+   }
+   .mydata{
+    font-size: 25px;
+    font-family: Cambria;
+    margin-left: 10px;
+  
+   }
+   ul{
+     list-style: circle;
+   }
+   table{
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+   }
+   tr,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    line-height: 1.8em;
+   }
+   th{
+    color: white;
+    background-color: teal;
+   }
+   .mybutton{
+    color: white;
+   background-color: tomato;
+   font-size: 25px;
+  }
+  .myclass1{
+    color: red;
+  }
+  .myclass2{
+    font-family:Cambria;
+    font-size: 30px;
+  }
+  .myred{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .myblue{
+    color: pink;
+  }

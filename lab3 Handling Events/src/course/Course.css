@@ -1,0 +1,14 @@
+.mycourse { 
+    font-size: 15px; 
+    color: blue; 
+    text-align: left; 
+    border: 2px solid red; 
+    padding: 15px; 
+   }
+
+   .mybutton {
+   font-size: 15px;
+   background-color:black;
+   color: red;
+
+  }

@@ -1,0 +1,35 @@
+.myheader{ 
+  text-align: center; 
+  font-size: 40px; 
+  font-family: Cambria; 
+  color:black;
+ }
+ .mydata{
+  font-size: 25px;
+  font-family: Cambria;
+  margin-left: 100px;
+
+ }
+ ul{
+   list-style: circle;
+ }
+ table{
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+ }
+ tr,td,th{
+  border: 1px solid black;
+  border-collapse: collapse;
+  line-height: 1.8em;
+  text-align: center;
+ }
+ th{
+  color: white;
+  background-color: teal;
+ }
+ .mybutton{
+  color: white;
+ background-color: teal;
+ font-size: 20px;
+}

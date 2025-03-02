@@ -1,0 +1,15 @@
+.mystudent { 
+    font-size: 15px; 
+    color: red; 
+    text-align: left; 
+    margin-left: 200px; 
+    border: 2px solid blue; 
+    width: 50%; 
+    padding: 15px; 
+   } 
+   .mybutton {
+    font-size: 15px;
+    background-color: white;
+    color: #000;
+ 
+   }

@@ -1,0 +1,12 @@
+.mycourse{
+    font-size: 16px;
+    color: green;
+    text-align: left;
+    border: 2px solid blue;
+    padding: 15px;
+}
+.mybutton{
+    font-size: 25px;
+    color: rgb(16, 18, 19);
+    background-color:greenyellow ;
+}
