@@ -22,6 +22,20 @@ class Hello extends Component{
     componentDidMount(){
         console.log(4,"Hello-componentDidMount");
     }
+    shouldComponentUpdate(nextProps,nextState){
+        console.log("Hello--shouldComponentUpdate");
+        return false;
+     }
+     getSnapshotBeforeUpdate(prevProps,prevState){
+        console.log("hello--getSnapshotBeforeUpdate");
+        return null;
+     }
+     componentDidUpdate(prevProps, prevState, mysnapshot){
+        console.log("hello -- componentDidUpdate");
+     }
+     componentWillUnmount(){
+        console.log(5, "hello- componentWillUnmount");
+     }
     render(){
         console.log(3,"Hello-render");
 

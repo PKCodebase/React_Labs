@@ -20,7 +20,20 @@ class Hai extends Component{
 
     componentDidMount(){
         console.log(4, "Hai ComponentDidMount");
-    }
+    }shouldComponentUpdate(nextProps,nextState){
+        console.log("Hai--shouldComponentUpdate");
+        return false;
+     }
+     getSnapshotBeforeUpdate(prevProps,prevState){
+        console.log("Hai--getSnapshotBeforeUpdate");
+        return null;
+     }
+     componentDidUpdate(prevProps, prevState, mysnapshot){
+        console.log("Hai -- componentDidUpdate");
+     }
+     componentWillUnmount(){
+        console.log(5, "Hai- componentWillUnmount");
+     }
 
     render(){
         console.log(3, "Hai render");

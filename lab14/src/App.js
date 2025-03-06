@@ -11,6 +11,7 @@ class App extends Component {
       this.state={
          name:"kaushik",
          courseFlag:true,
+         errorFlag:false
       }
    }
 
@@ -38,6 +39,18 @@ class App extends Component {
       console.log(5, "App componentWillUnmount");
    }
 
+   static getDerivedStateFromError(error){
+     console.log("App--getDerivedStateFromError");
+     return {hasError:true};
+   }
+   componentDidCatch(error, info){
+      console.log("App--componentDidCatch");
+      console.log("App - componentDidcatch");
+      //this.state.errorFlag = true;
+
+   }
+   
+
    showHideCourses = () =>{
       let mycourseFlag = this.state.courseFlag;
       this.setState({
@@ -48,6 +61,9 @@ class App extends Component {
     render(){
       console.log(3,".App-render");
 
+      // if(this.state.errorFlag===true){
+      //    return (<h3>Oops Something went wrong</h3>)    //Handling Exceptions
+      // }else{
       let displayCourse = null;
       if(this.state.courseFlag===true){
          displayCourse=(
@@ -80,6 +96,7 @@ class App extends Component {
       
        );
     }
+   //}
 
  }
 export default App; 
