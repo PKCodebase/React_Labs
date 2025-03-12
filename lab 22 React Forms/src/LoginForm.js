@@ -1,52 +1,36 @@
 import { event } from "jquery";
 import { Component } from "react";
+import React from "react";
 
 
 class LoginForm extends Component{
 
-    state={
-        username:'',
-        password:''
-    }
+    static defaultProps ={
+      username:'kaushik',
+      password:'1234',
+    };
 
-    // myUNchangeHandler = (myevent) =>{
-    //     myevent.preventDefault();
-    //     console.log("Username changed");
-
-    //     this.setState({
-    //         username:myevent.target.value
-    //     });
-    // };
-
-    // myPWchangeHandler = (myevent) =>{
-    //     myevent.preventDefault();
-    //     console.log("Change password");
-
-    //     this.setState({
-    //         password:myevent.target.value
-    //     });
+    constructor(props){
+        super(props);  
+        this.usernameInput = React.createRef();
+        this.passwordInput = React.createRef();
         
-    // }
-    mychangeHandler = (myevent) =>{
-        myevent.preventDefault(); //Stop Auto Refresh 
-        console.log("My Change Handler");
+      
 
-        this.setState({
-         [myevent.target.name]:myevent.target.value,  //Target Properties contain address of the current load 
-        });
-        
     }
 
     myclickHandler = (myevent) =>{
         myevent.preventDefault();
         console.log("Button clicked   - myclickHandler");
-        console.log(this.state);
+        console.log("UN",this.usernameInput.current.value);
+        console.log("PW", this.passwordInput.current.value);
         };
 
         mysubmitHandler = (myevent) =>{
             myevent.preventDefault();
             console.log("Submit Handler");
-            console.log(this.state);
+            console.log("UN",this.usernameInput.current.value);
+        console.log("PW", this.passwordInput.current.value);
         };
 
     render(){
@@ -65,9 +49,10 @@ class LoginForm extends Component{
                             name="username"
                             className="form-control form-control-lg"
                             placeholder="Enter Username.."
-                            value={this.state.username}
+                            ref = {this.usernameInput}
+                            defaultValue={this.props.username}
                             // onChange={this.myUNchangeHandler}
-                            onChange={this.mychangeHandler}
+                            // onChange={this.mychangeHandler}
                             />
                         </td>
                     </tr>
@@ -81,9 +66,10 @@ class LoginForm extends Component{
                             name="password"
                             className="form-control form-control-lg"
                             placeholder="Enter Password.."
-                            value={this.state.password}
-                            // onChange={this.myPWchangeHandler}
-                            onChange={this.mychangeHandler}
+                            ref={this.passwordInput}
+                            defaultValue={this.props.password}
+                         // onChange={this.myPWchangeHandler}
+                            // onChange={this.mychangeHandler}
                             />
                         </td>
                     </tr>
@@ -91,6 +77,7 @@ class LoginForm extends Component{
                     <tr>
                         <td colSpan="2" align="center" >
                             <button type="submit"
+                            onClick={this.myclickHandler}
                              className="btn btn-primary btn-lg"
                              >
                                 <h2>Login Now</h2>
@@ -100,6 +87,8 @@ class LoginForm extends Component{
 
                     </tbody>
                 </table>
+
+                {/* Welcome to {this.props.username}; */}
               </form>
             </div>
         );
