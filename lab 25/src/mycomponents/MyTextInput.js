@@ -1,5 +1,4 @@
 import React from "react";
-import classnames from "classnames";
 import propTypes from 'prop-types'; 
 
 const MyTextInput =(props)=>{
@@ -14,13 +13,9 @@ const MyTextInput =(props)=>{
                          name={props.myname}
                          placeholder={props.myplaceholder}
                          value={props.myvalue}
-                          onChange={props.myonChange}
-                          className={classnames("form-control form-control-lg", 
-                                              {
-                                                  "is-invalid":props.myerror, 
-                                              "is-valid":!props.myerror
-                                          })}/>
-                           <div className="text-danger">{props.myerror}</div>
+                         onChange={props.myonChange}
+                         className="form-control form-control-lg"
+                          />
                       </div> 
                      
          </div>
@@ -30,14 +25,13 @@ const MyTextInput =(props)=>{
 MyTextInput.propTypes = {
         mylabel:propTypes.string.isRequired,
         myname:propTypes.string.isRequired,
-        mytype:propTypes.string.isRequired,
+        // mytype:propTypes.string.isRequired,
         myvalue:propTypes.string.isRequired,
         myonChange:propTypes.func.isRequired,
     }
 
     MyTextInput.defaultProps = { 
-        mytext:'text', 
-        myerror:'', 
+        mytype:'text', 
     } 
 
 export default MyTextInput;

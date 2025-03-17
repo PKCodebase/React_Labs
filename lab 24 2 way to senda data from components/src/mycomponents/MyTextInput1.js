@@ -3,6 +3,7 @@ import React from 'react';
 import classnames from 'classnames'; 
 import propTypes from 'prop-types'; 
  
+//2nd way 
 const MyTextInput1 = ( 
     {myname,mylabel,mytype,myvalue,myplaceholder,myonChange,myerror} 
     ) => { 
