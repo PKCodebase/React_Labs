@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // import MyButton from "../mycomponents/MyButton"; 
 import MyCheckBox from "../mycomponents/MyCheckBox"; 
+import MyButton from "../mycomponents/MyButton";
 
 
 class CheckBoxDemo extends Component{
@@ -48,7 +49,7 @@ class CheckBoxDemo extends Component{
         });  
     };
 
-    reder(){
+    render(){
         return(
             <div className="card-body container col-md-6">
                 <h3 className="text-center"> CheckBoxDemo </h3> 
@@ -66,8 +67,9 @@ class CheckBoxDemo extends Component{
                             );
                         })}
                     </div>
-                    <input type="submit" value="Submit Now"
-                    className="btn btn-primary btn-lg"/>
+                    <br/>
+                   <MyButton myvalue="Submit Now"/>
+                   
                 </form>
             </div>
         );

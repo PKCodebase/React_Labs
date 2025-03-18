@@ -1,7 +1,6 @@
 import React from "react"; 
- 
-
-import MySelectBox from "../mycomponents/MySelectBox"; 
+import MySelectBox from "../mycomponents/MySelectBox";
+import MyButton from "../mycomponents/MyButton";
  
 class SelectBoxDemo extends React.Component { 
   constructor() { 
@@ -46,8 +45,7 @@ class SelectBoxDemo extends React.Component {
             myonChange={this.onChangeHandler} 
             myoptions={tmingsOptions}/> 
              
-            <input type="submit" value="Submit Now"
-            className="btn btn-primary btn-lg" />
+             <MyButton myvalue="Submit Now"/>
                                       
         </form> 
       </div> 

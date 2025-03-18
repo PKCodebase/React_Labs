@@ -1,5 +1,6 @@
 import { Component } from "react";
 import MyTextArea from "../mycomponents/MyTextArea";
+import MyButton from "../mycomponents/MyButton";
 
 class TextAreaDemo extends Component{
 
@@ -43,10 +44,7 @@ class TextAreaDemo extends Component{
                   <br/>
 
 
-                  <input 
-                  type="submit" 
-                  value="Submit Now" 
-                  className="btn btn-primary btn-lg"/>
+                  <MyButton myvalue="Submit Now"/>
                 </form>
 
             </div>

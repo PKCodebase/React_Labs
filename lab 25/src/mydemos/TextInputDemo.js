@@ -1,5 +1,6 @@
 import { Component } from "react";
 import MyTextInput from "../mycomponents/MyTextInput";
+import MyButton from "../mycomponents/MyButton";
 
 class TexxInputDemo extends Component{
     state={
@@ -52,8 +53,7 @@ class TexxInputDemo extends Component{
                     
                     <br/>
 
-                    <input  type="submit" value="Submit Now"
-                    className="btn btn-primary btn-lg "/>
+                    <MyButton myvalue="Submit Now"/>
                 </form>
             </div>
         )

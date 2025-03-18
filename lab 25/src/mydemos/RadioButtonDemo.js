@@ -1,5 +1,6 @@
 import { Component } from "react";
 import MyRadioButton from "../mycomponents/MyRadioButton";
+import MyButton from "../mycomponents/MyButton";
 
 class RadioButtonDemo extends Component{
     state={
@@ -42,10 +43,7 @@ class RadioButtonDemo extends Component{
                     />
                      </div>
 
-                    <input 
-                    type="submit"
-                    value="Submit Now"
-                    className="btn btn-primary btn-lg"/>
+                     <MyButton myvalue="Submit Now"/>
                  
                 </form>
             </div>
