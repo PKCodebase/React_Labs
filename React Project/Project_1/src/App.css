@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --red: #d01c28;
+    --gray: #2e2e2e;
+}
+*{
+    margin: 0;
+}
+body{
+    font-family: "Playfair Display", serif;
+}
+.logo img {
+    height: 60px;                       
+   object-fit: contain;   
+ display: block;    
+}
+.btn{
+    all: unset; 
+    font-size: 18px;
+    background: var(--red);
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    padding: 8px 20px;         /* Adds vertical + horizontal padding */
+    border-radius: 5px;        /* Optional: rounds corners */
+    margin-right: 20px;  
+}
+.btn:hover{
+    color: antiquewhite;
+    background-color: rgb(35, 185, 165);
+}
+.container{
+    max-width: auto;
+    /* max-width: 1000px; */
+   
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+  
+    background-color: wheat;
+    height: 70px;
+    align-items: center ;
+}
+nav ul{
+    display: flex;
+    font-size: 20px;
+    list-style: none;
+    cursor: pointer;
+    /* margin: 0;
+    padding: 0; */
+    gap: 20px;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 70px);
+    margin: 50px;
+}
+.hero h1{
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 70px;
+}
+.hero p1{
+    font-weight: 500px;
+    color:var(--gray);
+    font-size: 20px;
+}
+.hero-btn{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+  
+} 
+.hero-btn button{
+    font-size: 20px;
+}
+.secondry-btn{
+    background: antiquewhite;
+    font-size: 18px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.secondry-btn:hover{
+    background: var(--red);
+    color: white;
+}
+
+.shopping p {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .brand-icons {
+    display: flex;
+    gap: 30px;
+  }
+  .simple-footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: wheat;
+    color: #0f0f0f;
+    font-size: 20px;
+    margin-top: 70px;
+  }
+  
