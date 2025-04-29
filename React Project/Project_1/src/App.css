@@ -59,6 +59,11 @@ nav ul{
     height: calc(100vh - 70px);
     margin: 50px;
 }
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 .hero h1{
     font-weight: 800;
     font-size: 60px;
@@ -83,6 +88,7 @@ nav ul{
     font-size: 18px;
     border: 1px solid grey;
     border-radius: 5px;
+    padding: 8px 20px;
 }
 
 .secondry-btn:hover{
